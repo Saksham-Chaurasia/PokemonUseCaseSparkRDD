@@ -20,14 +20,22 @@ object Main {
 //    println(schema)
 
     //removing schema
-    val datafile = file.filter(row => row!=schema)
+    val datafile = file.filter( row=> row!=schema)
 
-      datafile.foreach(println)
+//      datafile.foreach(println)
 
     println(datafile.getNumPartitions)
     //finding the number of water and fire pokemons
 
     val data = datafile.map(_.split(","))
+    println("................")
+//    data.foreach(line =>{
+//      for(arr<-line) {
+//        print(arr + " ")
+//
+//      }
+//      println()
+//    })
 
     val types = data.map(col=>(col(2),col(3)))
 

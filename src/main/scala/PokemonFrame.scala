@@ -23,7 +23,7 @@ object PokemonFrame {
     val data: DataFrame = spark.read.option("header", true)
       .schema(schema).csv("input/pokemon.csv")
 
-//    data.printSchema()
+   data.printSchema()
 
     val rpard = data.repartition(2)
 

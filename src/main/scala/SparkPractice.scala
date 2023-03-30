@@ -3,6 +3,7 @@ package com.PokemonCase
 import org.apache.spark.sql.types.{IntegerType, StringType, StructField, StructType}
 import org.apache.spark.sql.{DataFrame, Row, SparkSession}
 
+case class schema2 (First_name : String, Last_name : String, Age : Int, Profile: String)
 object SparkPractice {
 
   def main(args: Array[String]): Unit = {
@@ -29,15 +30,16 @@ object SparkPractice {
     // second way while defining data type of the schema also
 
 //    case class schema2 (First_name : String, Last_name : String, Age : Int, Profile: String)
-////    import spark.sqlContext.implicits._
-////
-//   val data2 = Seq(schema2("Saksham","Chaurasia",23,"Data Engineer"),
-//  schema2("Sujith", "Inkulu",22, "Machine Learning"),
-//      schema2("Raja", "Deepak",21,"DataEngineer"))
+//    import spark.sqlContext.implicits._
 //
-//    val df2 = sc.parallelize(data2).toDF()
-////      val df2 = spark.createDataFrame(data2)
-//   df2.show()
+   val data2 = Seq(schema2("Saksham","Chaurasia",23,"Data Engineer"),
+  schema2("Sujith", "Inkulu",22, "Machine Learning"),
+      schema2("Raja", "Deepak",21,"DataEngineer"))
+
+    val df2 = sc.parallelize(data2).toDF()
+//      val df2 = spark.createDataFrame(data2)
+    df2.printSchema()
+   df2.show()
 
     // third way using struct field
 
@@ -62,21 +64,21 @@ object SparkPractice {
 
 //    val dataF:DataFrame = spark.read.option("header",true).option("infoSchema",true).csv("input/pokemon.csv")
 // read method  is define dataframe read method, which is the instance  of the Spark Session
-    val dataF:DataFrame = spark.read.format("csv")
-      .option("header",true)
-      .option("infoSchema", true)
-      .load("input/pokemon.csv")
+//    val dataF:DataFrame = spark.read.format("csv")
+//      .option("header",true)
+//      .option("infoSchema", true)
+//      .load("input/pokemon.csv")
 
 //    reading Streaming data this method define in dataframe stream reader,  dataframe stream writer
     // dataframe read method is different from sream reader
 
-//    val dataF:DataFrame = spark.readStream
-//      .format("socket")
-//      .option("host", "localhost")
-//      .option("port", "9999")
-//      .load()
+    val dataF:DataFrame = spark.readStream
+      .format("socket")
+      .option("host", "localhost")
+      .option("port", "9999")
+      .load()
 
-    dataF.show(50)
+    dataF.show(50,false )
 
 
 

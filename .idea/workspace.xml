@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce7768b3-c807-4984-b460-36c892077bf6" name="Changes" comment="commiting">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/PokemonFrame.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/SparkPractice.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/KafkaStreamingPractice.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/StreamingPractice.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/StreamingWordCount.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/PokemonFrame.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/PokemonFrame.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/SparkPractice.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/SparkPractice.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +45,17 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.PokemonFrame">
+  <component name="RunManager" selected="Application.KafkaStreamingPractice">
+    <configuration name="KafkaStreamingPractice" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.PokemonCase.KafkaStreamingPractice" />
+      <module name="Pokemon" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -73,10 +86,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StreamingPractice" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.PokemonCase.StreamingPractice" />
+      <module name="Pokemon" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamingWordCount" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.PokemonCase.StreamingWordCount" />
+      <module name="Pokemon" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.SparkPractice" />
       <item itemvalue="Application.PokemonFrame" />
+      <item itemvalue="Application.StreamingPractice" />
+      <item itemvalue="Application.StreamingWordCount" />
+      <item itemvalue="Application.KafkaStreamingPractice" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -109,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679718387031</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commiting">
+      <created>1679766592159</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679766592159</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
